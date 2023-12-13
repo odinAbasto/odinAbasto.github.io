@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ::after, * ::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(42, 42, 41, 0.5);
+}
+
+header a:hover, header a:active {
+  color: #424241;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: rgba(42, 42, 41, 0.5);
+  font-size: 16px;
+  height: 100vh;
+}
+
+.btn {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #424241;
+  color: white;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}/*# sourceMappingURL=header7 copy.css.map */

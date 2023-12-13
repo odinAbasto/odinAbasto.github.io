@@ -1,0 +1,209 @@
+
+$black-transparent: rgba(42, 42, 41, 0.5);
+$black: #424241;
+$gray: #FAF8F5;
+;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::after,::before{
+        box-sizing: border-box;
+    }    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $black-transparent;
+    
+}
+header{
+    a{
+        &:hover,&:active{
+            color: $black;
+        }
+    }
+}
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: $black-transparent;
+    font-size: 16px;
+    height: 100vh;
+    background:url('../img/header7/Group\ 1\(1\).svg') no-repeat fixed 0 0/cover ;
+
+
+}
+.btn{
+    display: flex;
+    width: 160px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    background-color: $black;
+    color: white;
+}
+.page{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url('../img/header7/img1.jpeg') no-repeat local 55% 36%/380px 580px,url('../img/header7/img2.jpeg') no-repeat local right 36%/380px 580px;
+    &>*{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.main-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 80px;
+    &__logo-container{
+        position: absolute;
+        left: 1rem;
+    }
+    &__nav-bar{
+        justify-content: center;
+        &__link-list{
+            display: flex;
+            gap: 42px;
+        }
+    }
+}
+.hero{
+    position: relative;
+}
+.hero__title{
+    max-width: 790px;
+    margin-bottom: 200px;
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px;
+        color: $black;
+        margin-bottom: 26px;
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 46px;
+    }
+    &__buttons-container{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &first-child{
+                &:hover{
+                    color: white;
+                }
+            }
+            &:last-child{
+                color: $black;
+                &::after{
+                    content: url('../img/header7/chevron-down\(1\).svg');
+                }
+                &:last-child:hover{
+                    text-decoration: underline;
+                    
+                }
+            }
+        }
+        
+        
+    }
+}
+.hero__achievements{
+    display: flex;
+    gap: 80px;
+    span{
+        color: $black;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 75px;
+        margin-bottom: 6px;
+    }
+}
+.hero__services{
+    a{
+        color: $black;
+    }
+    position: absolute;
+    
+    padding: 32px;
+    background-color: white;
+    right: calc(1rem + 5px);
+    width: 340px;
+    bottom: -10px;
+    h2{
+        margin-bottom: 18px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        color: $black;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        counter-reset: contador;
+        
+        &__item{
+            display: flex;
+            align-items: center;
+            padding-top: 18px;
+            padding-bottom: 18px;
+           
+            .btn-default::hover{
+                color: white;
+                
+            }
+            counter-increment: contador;
+            &::before{
+                font-size: 12px;
+                content: "0" counter(contador);
+                margin-right: 1rem;
+            }
+            &::after{
+                content: url("../img/header7/Arrow.svg");
+                margin-left: auto;
+                display: flex;
+                height: 30px;
+            }
+            
+        }
+    
+        li:first-child{
+            border-bottom: 1px solid #DEDAD5;
+        }
+        li:last-child{
+            border-top: 1px solid #DEDAD5;
+        }
+    }
+}
+.btn-default{
+    display: flex;
+    align-items: center;
+    &::after{
+        content: url('../img/header7/Diagonal\ Right\ Up\ Arrow.svg');
+        display: flex;
+        height: 20px;
+    }
+}

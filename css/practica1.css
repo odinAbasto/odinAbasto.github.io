@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.page{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+header{
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #1F1534;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    font-weight: 700;
+}
+header li:first-of-type a{
+    color: black;
+}
+header a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+main>*{
+    flex-basis: 50%;
+}
+figure img{
+    width: 100%;
+}
+h1{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 150%;
+}
+h1 span{
+    font-weight: 700;
+    color: #89C5CC;
+}
+main p{
+    margin-top: 16px;
+    max-width: 380px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    color: #7D7987;
+}
+main  a{
+    margin-top: 48px;
+    
+    display: inline-flex;
+    
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    background-color:#69B99D ;
+    width: 160px;
+    height: 50px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    position: absolute;
+    padding-bottom: 29px;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+    
+footer p{
+    text-align: center;
+}

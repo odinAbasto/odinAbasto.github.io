@@ -1,0 +1,200 @@
+$colred: #F38160;
+$colblack:#403C39;
+$colyellow:#F0B70D;
+$colgray:#949494;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::after,::before{
+        box-sizing: border-box;
+    }    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $colgray;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $colgray;
+}
+.btn{
+    display: flex;
+    width: 149px;
+    height: 60px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0; 
+    border-radius: 16px;
+    background: $colred;
+    color: white;
+}
+.page{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url("../img/header5/delivery-concept-handsome-african-american-deliver-AZUZTZ3\ 1.png") 80% 20%/65%,url("../img/header5/rectangle.svg") 650px 220px/28%,url("../img/header5/rectangle\(1\).svg") 740px 300px/28%;
+    background-repeat: no-repeat;
+
+    &>*{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.main-header{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &__nav-bar{
+        &__list{
+            display: flex;
+            gap: 56px;
+            li{
+                a:hover,a:active{
+                    position: relative;
+                    color: $colred;
+                    &::before{
+                        content:'';
+                        position: absolute;
+                        display: block;
+                        background-color: $colred;
+                        transition-property: width;
+                        transition-duration: 1s;
+                        width: 80%;
+                        height: 5px;
+                        bottom: -1ch;
+                        left: 10%;
+                    } 
+                }
+            }
+        }
+    }
+    &__user-options{
+        a:first-child{
+            position: relative;
+            &::before{
+                position: absolute;
+                content:"";
+                display: block;
+                width: 10px;
+                height: 10px;
+                right:-5px;
+                top:-5px;
+                border-radius: 10px;
+                background-color: $colred;
+
+            }
+        }
+        .sign-in{
+            color: $colred;
+            text-decoration: underline;
+        }
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+}
+.hero{
+    &__title{
+        max-width: 762px;
+        color: $colblack;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2.8px;  
+        margin-bottom: 16px;
+        span{
+            color: $colred;
+        }
+    }
+    &__description{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 166.667% */ 
+        max-width: 550px;
+        margin-bottom: 48px;
+    }
+    &__form{
+        display: flex;
+        position: relative;
+        max-width: 512px;
+        margin-bottom: 35px;
+        border-radius: 8px;
+        
+        input{
+            
+            background: rgba(208, 208, 210, 0.25);  
+            font-size: 16px;
+            padding: 17px 32px;
+            flex: 1;
+            outline: none;
+            border: none;
+            border-radius: 8px; 
+        }
+        button{
+            position: absolute;
+            border: none;   
+            padding: 16px;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            height: 55px;
+            right: 0;
+            border-radius: 0px 8px 8px 0px; 
+            background-color: $colred; 
+            img{
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    &__check-list{
+        font-size: 16px;
+        display: flex;
+        column-gap: 32px;
+        row-gap: 16px;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin-bottom: 50px;
+        li{
+            display: flex;
+            column-gap: 10px;
+            &::before{
+                content: url("../img/header5/Check.svg");
+                display: inline-block;
+                height: 0.5px;
+            }
+        }
+    }
+}
+
+.products{
+    display: flex;
+    padding: 32px;
+    gap: 24px;
+    justify-content: space-between;
+    img{
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: 500;
+        color: $colblack;
+    }
+    p{
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    ::after,::before{
+        box-sizing: border-box;
+    }
+}
+@mixin nav-ul {
+    list-style: none;
+    display: flex;
+}
+
+.default-btn {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #FA504D;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+.default-btn-transparent{
+    @extend .default-btn;
+    background-color: transparent;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    &::after {
+        content: url('../img/header4/Rectangle\(1\).png');
+        position: absolute;
+        width: 44vw;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &::before{
+        position: absolute;
+        content: "Artzie.";
+        display: block;
+        color: var(--White, #FFF);
+        font-family: Belgrano;
+        font-size: 260px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        transform: rotate(90deg);
+        right: -230px;
+        top: 350px;
+        opacity: 0.1;
+        
+        
+    
+    }
+}
+
+.page {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+   
+}
+
+.main-header {
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    align-items: center;
+
+    figure {
+        margin: 0;
+        margin-right: 50px;
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            @include nav-ul;
+            gap: 20px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #2E2F38;
+                }
+            }
+        }
+    }
+
+    aside {
+        display: flex;
+
+        .default-btn {
+            @extend .default-btn;
+            width: 140px;
+        }
+
+        .default-btn-transparent{
+            background-color: transparent;
+            color: white;
+            margin-right: 27px;
+        }
+    }
+}
+
+main{
+    display: flex;
+}
+
+.left-side{
+    width: 75%;
+    h1{
+        position: relative;
+        margin-top: 50px ;
+        margin-bottom: 16px;
+        color: var(--Black, #2E2F38);
+        font-family: Belgrano;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96px; /* 133.333% */ 
+        &::before{
+            position: absolute;
+            left: 3ch;
+            content:url(../img/header4/Vector\(4\).svg);
+            display: block;
+
+        }
+    }
+    p{
+        position: relative;
+        margin-bottom: 40px;
+        color: var(--Gray, #8E8E8E);
+        /* Text/Text 1 */
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 166.667% */ 
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0.2ch;
+            width: 6ch;
+            background: var(--Red, #FA504D); 
+            top: 2ch;
+        }
+    }
+    a{ 
+        display: inline-block;
+        width: 240px;
+    }
+    .default-btn-transparent{
+        position: relative;
+        margin-left: 30px;
+        display: inline-flex;
+        color: var(--Black, #2E2F38);
+        width: fit-content;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline; 
+        &::after{
+            
+            content: url("../img/header4/Arrow.svg");
+            position: absolute; 
+            display: inline-block;
+            right: -25px;
+            top: 5px;
+            color: var(--Black, #2E2F38);
+        }
+    }
+
+    &__featured{
+        margin-top: 74px;
+        h2{
+            color: var(--Black, #2E2F38);
+            font-family: Belgrano;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; 
+        }
+        figure{
+            
+            display: flex;
+            gap:10px;
+            width: fit-content;
+            img{
+                padding: 5px;
+                display: block;
+                border: 1px solid var(--Gray, #8E8E8E);
+                box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.10); 
+                width: 392px;
+                height: 224px; 
+            }
+        }
+    }
+    
+}
+.right-side{
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__hero-container{
+        font-size: 0;
+        img{
+            width: 544px;
+            height: 528px; 
+        }
+    }
+    &__artist-container{
+        position: relative;
+        width: 608px;
+        padding: 25px;
+        background-color: white;
+        span{
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+        }
+        span:first-child{
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; 
+        }
+        &__profile{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            &>div{
+                display: flex;
+                justify-content: space-between;
+                span{
+                    display: block;
+                }
+            }
+            &__current-bid{
+                display: flex;
+                flex-direction: column;
+                justify-content: start !important;
+            }
+        }
+
+        hr{
+            margin-bottom: 25px;
+        }
+        .default-btn-transparent{
+            color: var(--Red, #FA504D);
+
+        }
+        &__buttons{
+            display: flex;
+            a{
+                flex: 1;
+            }
+        }
+    }
+    &__numbers{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        article{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 8px;
+                color: var(--Red, #FA504D);
+                /* Title/Heading 3 */
+                font-family: Poppins;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+            }
+            p{
+                color: var(--White, #FFF);
+                /* Text/Text 2 */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; 
+            }
+        }
+    }
+}

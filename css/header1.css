@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 150px;
+    color: #424241;
+    height: 100vh;
+}
+h1{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+
+/* identical to box height */
+
+/* Text and Main/Black */
+color: #424241;
+
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    
+}
+header a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #424241;
+}
+header{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.title h2{
+    line-height: 120px;
+    /* Smart Business with Smart People */
+
+/* Title/Heading 1 */
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 120px;
+width: 140%;
+
+z-index: 1;
+/* or 100% */
+
+/* Text and Main/Gray */
+color: #7EDAD2;
+
+
+}
+.title{
+    width:35%;
+    margin-top: 50px;
+    
+}
+.title a{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7EDAD2;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+}
+.title p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    color: #909090;
+    font-size: 21px;
+
+}
+.title>*{
+    margin-top: 30x;
+}
+
+.woman{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    background-color: #7EDAD2;
+    height: 80%;
+    width: 60%;
+    z-index: -1;
+}
+.woman>img{
+    height: 100%;
+    width: 100%;
+    object-position:end;
+    object-fit:cover;
+    z-index: 1;
+}
+.achievements{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 50px;
+    color: #424241;
+
+}
+.achievements>*{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievements span{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 30px;
+}
+.achievements p{
+    font-family: 'Poppins', sans-serif;
+    
+}
+.services{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #424241;
+    
+}
+.services article{
+    padding: 30px;
+    background-color: white;
+}
+
+span{
+    color: #424241;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.rectangle{
+    height: 50%;
+    width: 50%;
+    border: 20px solid grey;
+    transform: rotate(45deg);
+    transform: translate(50%);
+}

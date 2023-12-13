@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quattrocento:wght@400;700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* :after, * :before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background: url("../img/header9/ellipse.svg") no-repeat right bottom/750px 750px, #2B2D38 url("../img/header9/ellipse.svg") no-repeat right bottom/1000px 1000px;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.btn {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #DB2A6B;
+  border-radius: 16px 16px 16px 0px;
+  color: white;
+  box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+header nav {
+  min-width: 500px;
+}
+header nav ul {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 40px;
+}
+header nav ul a {
+  text-decoration: none;
+  position: relative;
+  color: #ABABAB;
+}
+header nav ul a:hover, header nav ul a:active {
+  color: white;
+}
+header nav ul a:hover::after, header nav ul a:active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 2.5ch;
+  top: 2.5ch;
+  background-color: #DB2A6B;
+}
+
+main {
+  display: flex;
+}
+
+.title {
+  width: 50%;
+  margin-top: 40px;
+}
+.title h1 {
+  font-family: "Merriweather", serif;
+  font-family: Merriweather;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.title p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 36px;
+}
+.title .button-container {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.title .button-container a:last-child {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.title .button-container a:last-child::after {
+  content: url("../img/header9/Arrow(1).svg");
+  display: flex;
+  height: 32px;
+}
+.title .benefits {
+  display: flex;
+  gap: 40px;
+}
+.title .benefits article {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+.title .benefits article figure {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 10px;
+}
+.title .benefits article figure img {
+  height: 36px;
+}
+.title .benefits article span {
+  color: white;
+}
+
+.hero {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 32px;
+  max-height: 704px;
+}
+.hero img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero figure {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 56px;
+}
+.hero figure:first-child {
+  grid-row: 1/5;
+  grid-column: 1/2;
+  background-color: #6E1FED;
+}
+.hero figure:nth-child(2) {
+  grid-row: 1/3;
+  background-color: #60D3D9;
+}
+.hero figure:nth-child(3) {
+  grid-row: 5/7;
+  grid-column: 1/2;
+  background-color: #DB2A6B;
+}
+.hero figure:nth-child(4) {
+  grid-row: 3/7;
+  grid-column: 2/3;
+  background-color: #FF7E29;
+}
+.hero figure:nth-child(5) {
+  grid-row: 2/6;
+  background-color: #F4B840;
+}/*# sourceMappingURL=header9.css.map */

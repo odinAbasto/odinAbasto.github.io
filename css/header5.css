@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ::after, * ::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #949494;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #949494;
+}
+
+.btn {
+  display: flex;
+  width: 149px;
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #F38160;
+  color: white;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../img/header5/delivery-concept-handsome-african-american-deliver-AZUZTZ3 1.png") 80% 20%/65%, url("../img/header5/rectangle.svg") 650px 220px/28%, url("../img/header5/rectangle(1).svg") 740px 300px/28%;
+  background-repeat: no-repeat;
+}
+.page > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-header {
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.main-header__nav-bar__list {
+  display: flex;
+  gap: 56px;
+}
+.main-header__nav-bar__list li a:hover, .main-header__nav-bar__list li a:active {
+  position: relative;
+  color: #F38160;
+}
+.main-header__nav-bar__list li a:hover::before, .main-header__nav-bar__list li a:active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #F38160;
+  transition-property: width;
+  transition-duration: 1s;
+  width: 80%;
+  height: 5px;
+  bottom: -1ch;
+  left: 10%;
+}
+.main-header__user-options {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.main-header__user-options a:first-child {
+  position: relative;
+}
+.main-header__user-options a:first-child::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  top: -5px;
+  border-radius: 10px;
+  background-color: #F38160;
+}
+.main-header__user-options .sign-in {
+  color: #F38160;
+  text-decoration: underline;
+}
+
+.hero__title {
+  max-width: 762px;
+  color: #403C39;
+  font-family: Montserrat;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.8px;
+  margin-bottom: 16px;
+}
+.hero__title span {
+  color: #F38160;
+}
+.hero__description {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  max-width: 550px;
+  margin-bottom: 48px;
+}
+.hero__form {
+  display: flex;
+  position: relative;
+  max-width: 512px;
+  margin-bottom: 35px;
+  border-radius: 8px;
+}
+.hero__form input {
+  background: rgba(208, 208, 210, 0.25);
+  font-size: 16px;
+  padding: 17px 32px;
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.hero__form button {
+  position: absolute;
+  border: none;
+  padding: 16px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  height: 55px;
+  right: 0;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #F38160;
+}
+.hero__form button img {
+  height: 24px;
+  width: 24px;
+}
+.hero__check-list {
+  font-size: 16px;
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+.hero__check-list li {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.hero__check-list li::before {
+  content: url("../img/header5/Check.svg");
+  display: inline-block;
+  height: 0.5px;
+}
+
+.products {
+  display: flex;
+  padding: 32px;
+  gap: 24px;
+  justify-content: space-between;
+}
+.products img {
+  margin-bottom: 20px;
+}
+.products h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #403C39;
+}
+.products p {
+  font-size: 16px;
+}/*# sourceMappingURL=header5.css.map */
