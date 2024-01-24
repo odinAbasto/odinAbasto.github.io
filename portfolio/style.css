@@ -1,0 +1,406 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+.link, .underlined {
+  position: relative;
+}
+.link:after, .underlined:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: #4ee1a0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Reset button styles */
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Optional: Add your own styles for the button */
+button {
+  display: inline-block;
+  /* Your custom styles here */
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Optional: Add styles for button hover and focus states */
+hr {
+  display: blok;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+p {
+  color: #d9d9d9;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.link {
+  letter-spacing: 2.3px;
+}
+.link::after {
+  bottom: -10px;
+  height: 2px;
+}
+
+a.link:hover, button.link:hover {
+  color: #4ee1a0;
+}
+
+@media (min-width: 768px) {
+  footer .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer h2 {
+    text-align: start !important;
+  }
+  footer p {
+    text-align: start !important;
+  }
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+
+body {
+  color: #ffffff;
+  background: url("public/img/hero.png") no-repeat center top/174px 383px, #151515;
+}
+@media (min-width: 768px) {
+  body {
+    background: url("public/img/hero.png") no-repeat right top/322px 600px, #151515;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: #151515;
+  }
+}
+
+.social-media {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.social-media span {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .social-media {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-media span {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .hero {
+    align-items: start;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background: url("public/img/hero.png") no-repeat right top/322px 600px;
+  }
+}
+.hero h1 {
+  margin-top: 320px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .hero h1 {
+    margin-top: 90px;
+    max-width: 460px;
+    text-align: start;
+  }
+}
+.hero p {
+  text-align: center;
+  margin-bottom: 24px;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .hero p {
+    max-width: 445px;
+    text-align: start;
+  }
+}
+.hero a {
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .hero a {
+    margin-bottom: 100px;
+  }
+}
+
+.technologies {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.technologies article {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .technologies article {
+    align-items: start;
+    margin-bottom: 52px;
+  }
+}
+.technologies article .name {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .technologies article .name {
+    margin-bottom: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .technologies article .years {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hr-2 {
+    display: none;
+  }
+}
+
+.projects {
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  .projects .projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+  }
+}
+.projects .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.projects article {
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .projects article {
+    position: relative;
+  }
+}
+.projects article figure {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.projects article figure img {
+  width: 100%;
+}
+.projects article h3 {
+  margin-bottom: 7px;
+}
+.projects article .techs {
+  margin-bottom: 30px;
+}
+.projects article .techs span {
+  margin-right: 18px;
+}
+@media (min-width: 1200px) {
+  .projects article .links {
+    position: absolute;
+    top: 0;
+    bottom: 90px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .projects article .links:hover {
+    background-color: rgba(21, 21, 21, 0.5);
+  }
+}
+.projects article .links .link {
+  margin-right: 32px;
+}
+
+.footer-container {
+  background-color: #242424;
+}
+
+footer {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  footer .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  padding-bottom: 87px;
+}
+@media (min-width: 768px) {
+  footer form {
+    align-items: center;
+  }
+  footer form > * {
+    width: 400px;
+  }
+}
+footer form input, footer form textarea {
+  color: #d9d9d9;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 17px 24px;
+  margin-bottom: 32px;
+}
+footer input:focus, footer textarea:focus {
+  outline: none;
+  border-color: #4ee1a0;
+  color: #ffffff; /* Puedes agregar esta línea si hay un borde específico que deseas eliminar */
+}
+footer .button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
