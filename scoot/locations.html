@@ -5,38 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="locations">
-    <header class="header">
+  <header class="header">
+      
+    <div class="container">
+      
+      <input id="menu-toggle" type="checkbox" />
+      <label class='' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="locations.html">Location</a>
+        <a href="careers.html">Careers</a>
+        <a class="btn" href="index.html">Get Scootin</a>
+      </nav>
+      <figure>
+        <img src="public/img/logo.svg" alt="">
+      </figure>
+      
+    </div>
+  </header>
 
-        <div class="container">
-            <section class="nav">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="about.html">Careers</a></li>
-                    <li><a class="btn" href="">Get Scootin</a></li>
-                </ul>
 
-                <figure>
-                    <img src="public/img/logo.svg" alt="">
-                </figure>
-
-            </section>
-
-
-        </div>
-    </header>
-
-    <h1>
-        Locations
-    </h1>
+  <div class="h1-container container"><h1>Locations</h1></div>
     <div class="container">
         <figure>
             <img src="public/img/images/world-map-mobile.png" alt="">
