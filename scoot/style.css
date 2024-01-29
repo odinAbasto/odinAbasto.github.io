@@ -134,7 +134,7 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: url("../../public/img/icons/chevron.svg");
+  content: url("public/img/icons/chevron.svg");
   display: inline-block;
 }
 .question input {
@@ -144,7 +144,7 @@ h4 {
   display: block;
 }
 .question input:checked ~ label:before {
-  content: url("../../public/img/icons/chevron.svg");
+  content: url("public/img/icons/chevron.svg");
   transform: rotate(180deg);
   display: inline-block;
 }
@@ -394,10 +394,10 @@ header figure img {
   }
 }
 header input:not(:checked) ~ label::before {
-  content: url("../../public/img/icons/hamburger.svg");
+  content: url("public/img/icons/hamburger.svg");
 }
 header input:checked ~ label::before {
-  content: url("../../public/img/icons/close.svg");
+  content: url("public/img/icons/close.svg");
 }
 
 .container {
@@ -428,12 +428,12 @@ header input:checked ~ label::before {
   padding-bottom: 64px;
   position: relative;
   overflow: hidden;
-  background: url("../../public/img/images/home-hero-mobile.jpg") no-repeat center center/cover;
+  background: url("public/img/images/home-hero-mobile.jpg") no-repeat center center/cover;
   align-items: center;
   justify-content: center;
 }
 .home main .container::before {
-  content: url("../../public/img/patterns/right-arrow.svg");
+  content: url("public/img/patterns/right-arrow.svg");
   position: absolute;
   left: -300px;
   bottom: 32px;
@@ -451,7 +451,7 @@ header input:checked ~ label::before {
 }
 @media (min-width: 1200px) {
   .home main .container::after {
-    content: url("../../public/img/patterns/line.svg");
+    content: url("public/img/patterns/line.svg");
     position: absolute;
     left: -80px;
     top: 300px;
@@ -459,12 +459,12 @@ header input:checked ~ label::before {
 }
 @media (min-width: 768px) {
   .home main .container {
-    background: url("../../public/img/images/home-hero-tablet.jpg") no-repeat center center/cover;
+    background: url("public/img/images/home-hero-tablet.jpg") no-repeat center center/cover;
   }
 }
 @media (min-width: 1200px) {
   .home main .container {
-    background: url("../../public/img/images/home-hero-desktop.jpg") no-repeat center center/cover;
+    background: url("public/img/images/home-hero-desktop.jpg") no-repeat center center/cover;
   }
 }
 @media (min-width: 768px) {
@@ -585,7 +585,7 @@ header input:checked ~ label::before {
   position: relative;
 }
 .home .benefits article:first-child:before {
-  content: url("../../public/img/patterns/left-downward-arrow.svg");
+  content: url("public/img/patterns/left-downward-arrow.svg");
   position: absolute;
   left: 1rem;
   bottom: 50%;
@@ -605,7 +605,7 @@ header input:checked ~ label::before {
   }
 }
 .home .benefits article:nth-child(2):before {
-  content: url("../../public/img/patterns/right-arrow.svg");
+  content: url("public/img/patterns/right-arrow.svg");
   position: absolute;
   left: 0px;
   top: 50px;
@@ -626,7 +626,7 @@ header input:checked ~ label::before {
   }
 }
 .home .benefits article:nth-child(3):before {
-  content: url("../../public/img/patterns/left-downward-arrow.svg");
+  content: url("public/img/patterns/left-downward-arrow.svg");
   position: absolute;
   left: 33%;
   bottom: 60%;
@@ -700,7 +700,7 @@ header input:checked ~ label::before {
 .about .h1-container {
   position: relative;
   margin-top: 68px;
-  background: url("../../public/img/images/about-hero-mobile.jpg") no-repeat center center/cover;
+  background: url("public/img/images/about-hero-mobile.jpg") no-repeat center center/cover;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 100px;
@@ -709,7 +709,7 @@ header input:checked ~ label::before {
 }
 @media (min-width: 768px) {
   .about .h1-container {
-    background: url("../../public/img/images/about-hero-tablet.jpg") no-repeat center center/cover;
+    background: url("public/img/images/about-hero-tablet.jpg") no-repeat center center/cover;
   }
 }
 .about .h1-container h1 {
@@ -722,7 +722,7 @@ header input:checked ~ label::before {
 }
 @media (min-width: 1200px) {
   .about .h1-container h1 {
-    background: url("../../public/img/images/about-hero-desktop.jpg") no-repeat center center/cover;
+    background: url("public/img/images/about-hero-desktop.jpg") no-repeat center center/cover;
   }
 }
 @media (min-width: 1200px) {
@@ -740,7 +740,7 @@ header input:checked ~ label::before {
   overflow: hidden;
 }
 .about .benefits article:first-child:before {
-  content: url("../../public/img/patterns/left-downward-arrow.svg");
+  content: url("public/img/patterns/left-downward-arrow.svg");
   transform: rotateX(180deg);
   position: absolute;
   left: 1rem;
@@ -761,7 +761,7 @@ header input:checked ~ label::before {
   }
 }
 .about .benefits article:nth-child(2):before {
-  content: url("../../public/img/patterns/right-arrow.svg");
+  content: url("public/img/patterns/right-arrow.svg");
   position: absolute;
   left: -20%;
   top: 0px;
@@ -936,7 +936,7 @@ header input:checked ~ label::before {
 .locations .h1-container {
   position: relative;
   margin-top: 68px;
-  background: url("../../public/img/images/careers-location-hero-mobile.jpg") no-repeat center center/cover;
+  background: url("public/img/images/careers-location-hero-mobile.jpg") no-repeat center center/cover;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 100px;
@@ -945,7 +945,7 @@ header input:checked ~ label::before {
 }
 @media (min-width: 768px) {
   .locations .h1-container {
-    background: url("../../public/img/images/careers-locations-hero-tablet.jpg") no-repeat center center/cover;
+    background: url("public/img/images/careers-locations-hero-tablet.jpg") no-repeat center center/cover;
   }
 }
 .locations .h1-container h1 {
@@ -958,7 +958,7 @@ header input:checked ~ label::before {
 }
 @media (min-width: 1200px) {
   .locations .h1-container h1 {
-    background: url("../../public/img/images/careers-locations-hero-desktop.jpg") no-repeat center center/cover;
+    background: url("public/img/images/careers-locations-hero-desktop.jpg") no-repeat center center/cover;
   }
 }
 .locations .countries {
